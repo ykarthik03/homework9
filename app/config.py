@@ -42,9 +42,3 @@ ACCESS_TOKEN_EXPIRE_MINUTES = int(os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES", 30))
 # in this example. In production, use a more secure authentication method.
 ADMIN_USER = os.getenv('ADMIN_USER', 'admin')
 ADMIN_PASSWORD = os.getenv('ADMIN_PASSWORD', 'secret')  # 🛠️ CORRECTED TYPO FROM 'ecret' TO 'secret'
-def authenticate_user(username: str, password: str):
-    from app.config import ADMIN_USER, ADMIN_PASSWORD  # Import credentials
-    
-    if username == ADMIN_USER and password == ADMIN_PASSWORD:
-        return {"username": username}  # Return valid user
-    return None  # Authentication failed
