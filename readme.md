@@ -1,5 +1,7 @@
 This is my new repository with the fixed and updated code with entire program passing on the github Actions.
 
+![Screenshot](C:\Users\yella\OneDrive\Pictures\Screenshots\Screenshot 2025-04-06 152939.png)
+
 # Install
 1. Clone
 2. Make virtual environment:  python3 -m venv venv
